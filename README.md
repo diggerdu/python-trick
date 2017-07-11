@@ -31,4 +31,4 @@ In [45]: %timeit np.array([A[i:i+5] for i in range(0, 13-5+1, 2)])
 The slowest run took 9.04 times longer than the fastest. This could mean that an intermediate result is being cached.
 100000 loops, best of 3: 5.27 µs per loop
 ```
-In theory, `as_strided` is create a view of original array, memory usage is less then for-loop, although is slower.
+In theory, `as_strided` creates a view of original array, memory usage is less then for-loop, although is slower.
