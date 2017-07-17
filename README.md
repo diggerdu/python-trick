@@ -32,3 +32,8 @@ The slowest run took 9.04 times longer than the fastest. This could mean that an
 100000 loops, best of 3: 5.27 µs per loop
 ```
 In theory, `as_strided` creates a view of original array, memory usage is less then for-loop, although is slower.
+
+### Construct an array by executing a function over each coordinate
+```
+np.fromfuction
+```
