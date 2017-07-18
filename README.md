@@ -37,3 +37,9 @@ In theory, `as_strided` creates a view of original array, memory usage is less t
 ```
 np.fromfuction
 ```
+
+### Increase the dimension of the existing array
+```
+x1 = np.array([1, 2, 3, 4, 5])
+x1_new = x1[:, np.newaxis]
+```
