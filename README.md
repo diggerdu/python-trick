@@ -43,3 +43,10 @@ np.fromfuction
 x1 = np.array([1, 2, 3, 4, 5])
 x1_new = x1[:, np.newaxis]
 ```
+
+## Pytorch
+### Custom weight Initilzation
+```
+module.weight.data.copy_(ndarray
+```
+The definition of Conv2d weight axis:[Channels, Groups, Height, Width] 
