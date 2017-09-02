@@ -47,6 +47,6 @@ x1_new = x1[:, np.newaxis]
 ## Pytorch
 ### Custom weight Initilzation
 ```
-module.weight.data.copy_(ndarray
+module.weight.data.copy_(ndarray)
 ```
 The definition of Conv2d weight axis:[Channels, Groups, Height, Width] 
