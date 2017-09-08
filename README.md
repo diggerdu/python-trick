@@ -49,4 +49,6 @@ x1_new = x1[:, np.newaxis]
 ```
 module.weight.data.copy_(ndarray)
 ```
-The definition of Conv2d weight axis:[Channels, Groups, Height, Width] 
+The definition of Conv2d weight axis:[Channels, Groups, Height, Width]
+
+### Custom Module should add parameters to OrderDict `self._parameters`
