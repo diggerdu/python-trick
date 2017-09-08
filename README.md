@@ -52,3 +52,9 @@ module.weight.data.copy_(ndarray)
 The definition of Conv2d weight axis:[Channels, Groups, Height, Width]
 
 ### Custom Module should add parameters to OrderDict `self._parameters`
+
+right way
+```
+self.trans_kernels = nn.Parameter(torch.from_numpy(trans_kernels[:, np.newaxis, np.newaxis, :]).float())
+```
+the instance will be added to `self._parameters` automaticaly once it is assigned as the attribute of a module 
