@@ -43,6 +43,10 @@ np.fromfuction
 x1 = np.array([1, 2, 3, 4, 5])
 x1_new = x1[:, np.newaxis]
 ```
+### Clone array A to B
+```
+B = np.array(A)
+```
 
 ## Pytorch
 ### Custom weight Initilzation
